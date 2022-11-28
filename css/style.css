@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: relative;
+    display: flex;
+}
+
+.navbar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 300px;
+    height: 100vh;
+    background-color: #1e272e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 0px;     
+}
+
+.navbar .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.navbar .info img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.navbar .info h1 {
+    color: #0fbcf9;
+    margin-bottom: 10px
+}
+
+.navbar .info h3{
+    color: white;
+    margin-bottom: 10px
+}
+
+.navbar .info small{
+    color: white;
+    text-align: center;
+}
+
+.navbar .nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar .nav ul li {
+    margin: 5px 0px;
+}
+
+.navbar .nav ul li a{
+    text-decoration: none;
+    color: #d2dae2;
+}
+
+.active a{
+    color: white !important;
+    font-weight: 500;
+}
+
+.navbar .link{
+    display: flex;
+}
+
+.navbar .link .icon {
+    margin: 0px 5px;
+}
+
+.navbar .link .icon a{
+    color: #d2dae2;
+    font-size: larger;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 300px;
+}
+
+.poster {
+    padding-top: 5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    
+}
+
+.poster .inform{
+    display: flex;
+}
+
+.poster .inform .date {
+    color: #3c40c6;
+    font-weight: 500;
+}
+
+.poster .inform .seperate{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.poster .inform .seperate div{
+    padding-top: auto;
+    padding-bottom: auto;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.poster .inform .category {
+    color: #f53b57;
+    font-weight: 500;
+}
+
+.poster .title h1{
+    color: #1e272e;
+    margin: 10px 0px;
+    font-family: 'Merriweather', serif;
+}
+
+.poster .description p{
+    font-family: 'Roboto Slab', serif;
+    line-height: 20px;
+    font-size: 16px;
+    color: #485460;
+}
+
+.poster .readmore a {
+    text-decoration: none;
+    color: #0fbcf9;
+}
